@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# 📝 Todo App (React学習プロジェクト)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React.jsを使用したモダンなTodoアプリケーションです。
 
-## Available Scripts
+## 🌟 機能
 
-In the project directory, you can run:
+- ✅ Todoの追加・削除・完了切り替え
+- 💾 ローカルストレージでデータ永続化
+- 📊 タスク統計表示（全体・完了・未完了）
+- 📱 レスポンシブデザイン対応
+- ✨ ホバーアニメーション
 
-### `npm start`
+## 🛠️ 使用技術
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** 18.x (Hooks: useState, useEffect)
+- **CSS3** (Flexbox, CSS Grid, アニメーション)
+- **localStorage** (データ永続化)
+- **ES6+** (Arrow Functions, Destructuring, Spread Operator)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 セットアップ
 
-### `npm test`
+```bash
+# リポジトリをクローン
+git clone https://github.com/kouki0318/demo_app.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 依存関係をインストール
+npm install
 
-### `npm run build`
+# 開発サーバー起動
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📱 デモ
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Todo App Screenshot](https://via.placeholder.com/600x400/667eea/white?text=Todo+App+Demo)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 主な機能
+1. **タスク追加**: 入力欄にタスクを入力してEnterまたは「追加」ボタン
+2. **完了切り替え**: チェックボックスでタスクの完了状態を切り替え
+3. **タスク削除**: 「削除」ボタンでタスクを除去
+4. **データ永続化**: ブラウザを閉じても データが保持される
 
-### `npm run eject`
+## 💡 学習ポイント
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+このプロジェクトで習得した技術：
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### React Hooks
+- `useState`: 状態管理（todos, inputValue）
+- `useEffect`: 副作用処理（ローカルストレージ連携）
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### JavaScript ES6+
+- スプレッド演算子: `[...todos, newTodo]`
+- 分割代入: `const [todos, setTodos] = useState([])`
+- アロー関数: `todos.map(todo => ...)`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### データ操作
+- 配列メソッド: `map`, `filter`
+- JSON操作: `JSON.stringify`, `JSON.parse`
+- ローカルストレージAPI
 
-## Learn More
+## 🎯 今後の改善予定
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [ ] TypeScript導入
+- [ ] コンポーネント分割
+- [ ] テスト追加（Jest + React Testing Library）
+- [ ] ドラッグ&ドロップ機能
+- [ ] ダークモード切り替え
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 👤 作成者
 
-### Code Splitting
+**kouki0318**
+- 情報系専門学校卒
+- React学習中（2025年開始）
+- 目標: フロントエンド開発者として転職
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 ライセンス
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License
