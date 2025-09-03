@@ -13,7 +13,7 @@ const TodoStats: React.FC<TodoStatsProps> = ({ todos }) => {
   return (
     <div className="todo-stats">
       <p>
-        全体: {totalCount}件 |
+        合計: {totalCount}件 |
         完了: {completedCount}件 |
         未完了: {pendingCount}件
       </p>

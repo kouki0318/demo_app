@@ -27,11 +27,11 @@ const TodoInput: React.FC<TodoInputProps> = ({ onAddTodo }) => {
         value={inputValue}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInputValue(e.target.value)}
         onKeyPress={handleKeyPress}
-        placeholder="新しいタスクを入力..."
+        placeholder="やることを入力してください"
         className="todo-input"
       />
       <button onClick={handleAddTodo} className="add-button">
-        追加
+        登録
       </button>
     </div>
   );
